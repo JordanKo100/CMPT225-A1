@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",   // This flag enables debug symbols for debugging
+                "a1main.cpp", // Add your .cpp files here
+                "PlayList.cpp",
+                "Song.cpp",
+                "-o", "playlist_program" // Output file
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task for building the C++ project."
+        }
+    ]
+}
